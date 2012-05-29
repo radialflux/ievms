@@ -31,11 +31,11 @@ Installation
 
    * Install IE versions 6, 7, 8 and 9.
 
-         curl -s https://raw.github.com/xdissent/ievms/master/ievms.sh | bash
+         curl -s https://raw.github.com/radialflux/ievms/master/ievms.sh | bash
 
    * Install specific IE versions (IE7 and IE9 only for example):
 
-         curl -s https://raw.github.com/xdissent/ievms/master/ievms.sh | IEVMS_VERSIONS="7 9" bash
+         curl -s https://raw.github.com/radialflux/ievms/master/ievms.sh | IEVMS_VERSIONS="7 9" bash
 
 3. Launch Virtual Box.
 
@@ -71,7 +71,7 @@ Specifying the install path
 
 To specify where the VMs are installed, use the INSTALL_PATH variable:
 
-    curl -s https://raw.github.com/xdissent/ievms/master/ievms.sh | INSTALL_PATH="/Path/to/.ievms" bash
+    curl -s https://raw.github.com/radialflux/ievms/master/ievms.sh | INSTALL_PATH="/Path/to/.ievms" bash
 
 
 Passing additional options to curl
@@ -80,7 +80,7 @@ Passing additional options to curl
 The ``curl`` command is passed any options present in the ``CURL_OPTS`` 
 environment variable. For example, you can set a download speed limit:
 
-    curl -s https://raw.github.com/xdissent/ievms/master/ievms.sh | CURL_OPTS="--limit-rate 50k" bash
+    curl -s https://raw.github.com/radialflux/ievms/master/ievms.sh | CURL_OPTS="--limit-rate 50k" bash
 
 
 Features
@@ -103,7 +103,7 @@ Clean Snapshot
 Resuming Downloads
     If one of the comically large files fails to download, the ``curl`` 
     command used will automatically attempt to resume where it left off. 
-    Thanks, rcmachado (https://github.com/rcmachado).
+    Thanks, rcmachado & xdissent (https://github.com/rcmachado), (https://github.com/xdissent) for the tons of changes
 
 
 License
